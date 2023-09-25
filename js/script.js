@@ -12,7 +12,7 @@ const job = document.querySelector('#job');
 const dateEmployment = document.querySelector('#date-employment');
 const availabilityWork = document.querySelectorAll('[name="works"]');
 const dateDismissal = document.querySelector('#date-dismissal');
-const btnSave = document.querySelector('.button')
+const form = document.querySelector('.form')
 
 if (!localStorage.getItem('persons')) {
     localStorage.setItem('persons', JSON.stringify([]))
@@ -168,7 +168,7 @@ const render = function () {
     });
 };
 
-btnSave.addEventListener('submit', function (event) {
+form.addEventListener('submit', function (event) {
     event.preventDefault()  // отключили стандартное поведение формы
 
     const specializations = document.querySelectorAll('[name="specializations[]"]:checked');
