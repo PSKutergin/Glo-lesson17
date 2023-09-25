@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/slyle.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <form class="form">
+        <section class="form-main">
+            <section class="form-person">
+                <label>Имя: <input type="text" name="name" id="name" placeholder="Ваше имя" required></label>
+                <label>Фамилия: <input type="text" name="surname" id="surname" placeholder="Ваша фамилия"
+                        required></label>
+                <label>Дата рождения: <input type="date" name="birthday" id="birthday" required></label>
+                <label>E-mail адрес: <input type="email" name="email" id="email" required></label>
+                <label>Город: <input type="text" name="city" id="city" required></label>
+                <label>Семейное положение:
+                    <select name="family-status" id="family-status">
+                        <option value="married">Женат/Замужем</option>
+                        <option value="single">Холост/Не замужем</option>
+                    </select>
+                </label>
+            </section>
+            <section class="form-job">
+                <label>Общий стаж: <input type="number" name="experience" id="experience" min="0"
+                        placeholder="Количество лет" required></label>
+                <label>Профессия:
+                    <select name="major" id="major">
+                        <option value="">Выберите профессию</option>
+                        <option value="doctor">Врач</option>
+                        <option value="teacher">Учитель</option>
+                    </select>
+                </label>
+                <label>Последнее место работы: <input type="text" name="job" id="job" required></label>
+                <label>Дата трудоустройства: <input type="date" name="date-employment" id="date-employment"
+                        required></label>
+                <section class="availability-work" id="availability-work">
+                    <div>В настоящий момент работаете?</div>
+                    <label><input type="radio" name="works" value="yes" checked>Да</label>
+                    <label><input type="radio" name="works" value="no">Нет</label>
+                </section>
+                <label>Дата увольнения: <input type="date" name="date-dismissal" id="date-dismissal" disabled></label>
+            </section>
+            <section class="subjects">
+                <div>Какие предметы преподаёте?</div>
+                <label class="subjects-item"><input type="checkbox" name="subjects[]" value="Физика">Физика</label>
+                <label class="subjects-item"><input type="checkbox" name="subjects[]"
+                        value="Математика">Математика</label>
+                <label class="subjects-item"><input type="checkbox" name="subjects[]" value="Химия">Химия</label>
+                <label class="subjects-item"><input type="checkbox" name="subjects[]"
+                        value="Иностранный язык">Иностранный язык</label>
+                <label class="subjects-item"><input type="checkbox" name="subjects[]"
+                        value="Литература">Литература</label>
+                <label class="subjects-item"><input type="checkbox" name="subjects[]" value="Русский язык">Русский
+                    язык</label>
+                <label class="subjects-item"><input type="checkbox" name="subjects[]" value="Биология">Биология</label>
+                <label class="subjects-item"><input type="checkbox" name="subjects[]"
+                        value="Информатика">Информатика</label>
+                <label class="subjects-item"><input type="checkbox" name="subjects[]"
+                        value="Физкультура">Физкультура</label>
+            </section>
+            <section class="specializations">
+                <div>Какие специализации имеете?</div>
+                <label class="specializations-item"><input type="checkbox" name="specializations[]"
+                        value="Терапевт">Терапевт</label>
+                <label class="specializations-item"><input type="checkbox" name="specializations[]"
+                        value="Педиатр">Педиатр</label>
+                <label class="specializations-item"><input type="checkbox" name="specializations[]"
+                        value="Офтальмолог">Офтальмолог</label>
+                <label class="specializations-item"><input type="checkbox" name="specializations[]"
+                        value="Невролог">Невролог</label>
+                <label class="specializations-item"><input type="checkbox" name="specializations[]"
+                        value="Стоматолог">Стоматолог</label>
+                <label class="specializations-item"><input type="checkbox" name="specializations[]"
+                        value="Онколог">Онколог</label>
+                <label class="specializations-item"><input type="checkbox" name="specializations[]"
+                        value="Травматолог">Травматолог</label>
+                <label class="specializations-item"><input type="checkbox" name="specializations[]"
+                        value="Хирург">Хирург</label>
+                <label class="specializations-item"><input type="checkbox" name="specializations[]"
+                        value="Диетолог">Диетолог</label>
+            </section>
+        </section>
+        <section class="form-actions">
+            <button class="button">Сохранить</button>
+        </section>
+    </form>
+
+    <section class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>Дата рождения</th>
+                    <th>E-mail адрес</th>
+                    <th>Город</th>
+                    <th>Семейное положение</th>
+                    <th>Общий стаж</th>
+                    <th>Должность</th>
+                    <th>Место работы</th>
+                    <th>Дата трудоустройства</th>
+                    <th>Дата увольнения</th>
+                    <th>Направления</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+
+
+</body>
+
+</html>
