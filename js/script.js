@@ -202,7 +202,9 @@ form.addEventListener('submit', function (event) {
         personsData.push(newPerson);
         localStorage.setItem('persons', JSON.stringify(personsData));
 
-    } else if (selectMajor === "Учитель") {
+    }
+
+    if (selectMajor === "Учитель") {
         const newPerson = new Teacher(
             name.value,
             surname.value,
