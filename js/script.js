@@ -198,7 +198,7 @@ form.addEventListener('submit', function (event) {
             dateDismissalValue = '' ? dateDismissal.value : dateDismissalValue,
             Array.from(specializations).map(cb => cb.value)
         )
-        console.log(newPerson);
+
         personsData.push(newPerson);
         localStorage.setItem('persons', JSON.stringify(personsData));
 
@@ -224,7 +224,10 @@ form.addEventListener('submit', function (event) {
         localStorage.setItem('persons', JSON.stringify(personsData))
     }
 
-    document.querySelectorAll('input').forEach((e) => {
+    document.querySelectorAll('input[type="text"]').forEach((e) => {
+        e.value = ''
+    })
+    document.querySelectorAll('input[type="date"]').forEach((e) => {
         e.value = ''
     })
     specializations.forEach((e) => {
